@@ -3,6 +3,8 @@ COSC 1437 - Dr. Tyson McMillan
 Assignment 1 - "You have been tasked with creating a decision
 program menu to help students who are taking a Physics 
 (Mechanics) class perform simple foundation calculations"*/
+
+//It's not perfect but it works!!! ...or it should work
 #include "function.h"
 #include <iostream>
 #include <iomanip>

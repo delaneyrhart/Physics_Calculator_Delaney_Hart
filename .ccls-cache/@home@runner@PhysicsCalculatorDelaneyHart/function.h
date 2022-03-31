@@ -63,7 +63,7 @@ void menuOption(string userOption)
        string option2 = "";  
         do
         {
-           showSubMenu
+           showSubMenu();
            cout << color;
            option2 = validateString(option2); 
            subMenuOption(option2);
@@ -147,7 +147,7 @@ cout << "Please enter the number of the calculation you wish to do or enter E to
 void showSubMenu()//for the 4 equations of motion
 {
    cout << "\nPlease choose a sub-option\n\n"
-      << "\tA. Veloticy-time: v = u + at\n" 
+      << "\tA. Velocity-time: v = u + at\n" 
       << "\tB. Position-time: s = ut + .5(a * t^2)\n"
       << "\tC. s = .5t(v + u)\n"
       << "\tD. Velocity-position: v^2 = u^2 + 2as\n"
@@ -169,7 +169,7 @@ void subMenuOption(string userOption2)
      cout << "\nu = " << u << "\na = " << a << "\nt = " << t << endl;
      cout << "The answer to v = u + at is " << motion1(u, a, t) << endl; }
   else if (userOption2 == "B" || userOption2 == "b")
-      {cout << "Second equation\n";
+      {cout << "\nSecond equation\n";
       cout << "Please enter the initial velocity:\n";
       u = validateDouble(u);
       cout << "Please enter the acceleration\n";
@@ -179,7 +179,7 @@ void subMenuOption(string userOption2)
         cout << "\nu = " << u << "\na = " << a << "\nt = " << t         << endl;
         cout << "The answer to s = ut + .5(a * t^2) is: "<<             motion2(u, a, t) << endl; }
   else if (userOption2 == "C" || userOption2 == "c")
-    {cout << "Third equation\n";
+    {cout << "\nThird equation\n";
       cout << "Please enter the time taken\n";
       t = validateDouble(t);
       cout << "Please enter the final velocity:\n";
@@ -189,7 +189,7 @@ void subMenuOption(string userOption2)
       cout << "\nt = " << t << "\nv = " << v << "\nu = " << u         << endl;
       cout << "The answer to s = .5t(v + u) is: " <<           motion3(t, v, u) << endl; }
   else if (userOption2 == "D" || userOption2 == "d")
-    {cout << "Fourth equation\n";
+    {cout << "\nFourth equation\n";
       cout << "Please enter the initial velocity\n";
       u = validateDouble(u);
       cout << "Please enter the acceleration\n";
@@ -199,9 +199,9 @@ void subMenuOption(string userOption2)
       cout << "\nu = " << u << "\na = " << a << "\ns = " << s         << endl;
       cout << "The answer to v^2 = u^2 + 2as is :" << motion4(u, a, s) << endl; }
     else if (userOption2 == "E" || userOption2 == "e")
-    cout << "Exiting to main menu\n";
+    cout << "\nExiting to main menu\n";
   else
-    cout << "Invalid entry please try again\n";
+    cout << "\nInvalid entry please try again\n";
 }
 
 double velocity(double ds, double dt)//velocity
