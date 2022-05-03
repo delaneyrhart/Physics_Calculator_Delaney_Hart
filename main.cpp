@@ -1,8 +1,10 @@
 /* Delaney Hart
-COSC 1437 - Dr. Tyson McMillan
+COSC 1437 Tarrant County College - Dr. Tyson McMillan
 Assignment 1 - "You have been tasked with creating a decision
 program menu to help students who are taking a Physics 
-(Mechanics) class perform simple foundation calculations"*/
+(Mechanics) class perform simple foundation calculations"
+This project makes use all the concepts learned in COSC 1436
+*/
 
 //It's not perfect but it works!!! ...or it should work
 #include "function.h"
